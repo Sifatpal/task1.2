@@ -1,0 +1,68 @@
+/* Base styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #444;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query for Tablet and Larger Screens */
+@media (min-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0;
+    }
+}
+
+/* Media Query for Desktop Screens */
+@media (min-width: 1024px) {
+    header {
+        font-size: 36px;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+}
